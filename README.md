@@ -8,11 +8,18 @@ Hierarchical algorithms can be further divided into divisive algorithms and aggl
 
 This repository includes a Cluster Python program that runs single-link, Complete-link and Average-link Clusters
 
-## Imports to run code
+### Imports to run code
 ```
 from sklearn.cluster import AgglomerativeClustering
 import matplotlib.pyplot as plt
 import numpy as np
+```
+### Hierarchical Clustering(Agglomerative) using Single Link technique code
+```
+# Creating Agglomerative Clustering models
+single_link = AgglomerativeClustering(n_clusters=3, linkage='single')
+complete_link = AgglomerativeClustering(n_clusters=3, linkage='complete')
+average_link = AgglomerativeClustering(n_clusters=3, linkage='average')
 ```
 ## Screen Captures
 ### Single-Link Clustering 
